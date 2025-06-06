@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produit 3</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <title>Réservation</title>
 </head>
 <body>
     <header>
@@ -43,68 +42,69 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <br>
         <br>
 
-        <section>
+        <form action="post">
+            <fieldset>
+                <legend>Faite votre réservation</legend>
 
-            <figure>
-                <img src="../imgs/10-e-commerce/deltarune.png" alt="Deltarune" width="250">
-            </figure>
+                <br>
 
-            <p><strong>Deltarune</strong> - <em>24,99€</em></p>
-            <p>Dive into the parallel story to UNDERTALE! Fight or spare your way through action-packed battles as you explore a mysterious world alongside an endearing cast of new and familiar characters. Chapters 1-4 will be available on launch, with more planned as free updates!</p>
-            
-            <br>
+                <label for="reservation-select">Type de réservation :</label>
+                <br>
+                <select name="reservation-select" id="reservation-select" required>
+                    <option value="">-- Veuillez choisir une option --</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="hotel">Hôtel</option>
+                </select>
 
-            <a href="25-produit-1.html">Produit 1</a>
-            <a href="25.1-produit-2.html">Produit 2</a>
-
-            <br>
-            <br>
-            <br>
-
-            <table border="2">
-                <thead>
-                    <th colspan="3">Caractéristiques techniques</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>RPG</td>
-                        <td>Rétro</td>
-                        <td>Fantaisie</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <br>
-        <br>
-
-        <section>
-            <h1>Les avis de nos clients :</h1>
-
-            <ul>
-                <li>
-                    John Doe&ensp;<i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem!
-                </li>
                 <br>
                 <br>
-                <li>
-                    Mark Smith&ensp;<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem!
-                </li>
+
+                <input type="checkbox" id="reunion">
+                <label for="reunion">Salle de réunion</label>
+
                 <br>
                 <br>
-                <li>
-                    Jane Doe&ensp;<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem!
-                </li>
-            </ul>
-        </section>
+
+                <label for="date">Date :</label>
+                <br>
+                <input type="date" id="date" required>
+
+                <br>
+                <br>
+
+                <label for="heure">Heure :</label>
+                <br>
+                <input type="time" id="heure" required>
+
+                <br>
+                <br>
+
+                <label for="personnes">Nombre de personnes :</label>
+                <br>
+                <input type="number" id="personnes" required>
+
+                <br>
+                <br>
+
+                <label for="commentaire">Commentaire (optionnel) :</label>
+                <br>
+                <textarea id="commentaire" rows="8" cols="33"></textarea>
+
+                <br>
+                <br>
+
+                <button>Envoyer</button>
+
+                <br>
+                <br>
+
+            </fieldset>
+        </form>
     </main>
 
     <br>
