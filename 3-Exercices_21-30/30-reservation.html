@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -53,7 +54,7 @@
 
                 <br>
 
-                <label for="reservation-select">Type de réservation :</label>
+                <label for="reservation-select"><i class="fa-solid fa-file-pen"></i>&ensp;Type de réservation :</label>
                 <br>
                 <select name="reservation-select" id="reservation-select" required>
                     <option value="">-- Veuillez choisir une option --</option>
@@ -70,28 +71,28 @@
                 <br>
                 <br>
 
-                <label for="date">Date :</label>
+                <label for="date"><i class="fa-solid fa-calendar-days"></i>&ensp;Date :</label>
                 <br>
                 <input type="date" id="date" required>
 
                 <br>
                 <br>
 
-                <label for="heure">Heure :</label>
+                <label for="heure"><i class="fa-solid fa-clock"></i>&ensp;Heure :</label>
                 <br>
                 <input type="time" id="heure" required>
 
                 <br>
                 <br>
 
-                <label for="personnes">Nombre de personnes :</label>
+                <label for="personnes"><i class="fa-solid fa-user"></i>&ensp;Nombre de personnes :</label>
                 <br>
                 <input type="number" id="personnes" required>
 
                 <br>
                 <br>
 
-                <label for="commentaire">Commentaire (optionnel) :</label>
+                <label for="commentaire"><i class="fa-solid fa-comment"></i>&ensp;Commentaire (optionnel) :</label>
                 <br>
                 <textarea id="commentaire" rows="8" cols="33"></textarea>
 
